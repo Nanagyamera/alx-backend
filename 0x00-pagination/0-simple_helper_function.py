@@ -4,7 +4,7 @@ Task 0
 """
 
 
-def index_range(page, page_size):
+def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """
     Calculates the start and end indexes for a given page and page size.
 
