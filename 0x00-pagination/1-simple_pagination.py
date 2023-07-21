@@ -51,7 +51,7 @@ class Server:
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """
-        Get a specific page of the dataset based on the provided 
+        Get a specific page of the dataset based on the provided
         pagination parameters.
 
         Args:
@@ -71,6 +71,6 @@ class Server:
         start_idx, end_idx = index_range(page, page_size)
 
         if start_idx >= total_items:
-            return []  # Return an empty list if the start index is out of range
+            return []
 
         return dataset[start_idx:end_idx + 1]
