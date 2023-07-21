@@ -2,10 +2,9 @@
 """
 Task 0
 """
-from typing import Tuple
 
 
-def index_range(page: int, page_size: int) -> Tuple[int, int]:
+def index_range(page, page_size):
     """
     Calculates the start and end indexes for a given page and page size.
 
