@@ -51,7 +51,8 @@ class Server:
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """
-        Get a specific page of the dataset based on the provided pagination parameters.
+        Get a specific page of the dataset based on the provided 
+        pagination parameters.
 
         Args:
             page (int, optional): The page number (1-indexed). Default is 1.
