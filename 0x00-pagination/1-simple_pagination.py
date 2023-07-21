@@ -16,7 +16,7 @@ def index_range(page: int, page_size: int) -> tuple:
 
     Returns:
         tuple: A tuple containing the start index and the end index
-        (both 0-indexed) for the given page.
+              (both 0-indexed) for the given page.
     """
     if page < 1 or page_size < 1:
         raise ValueError("Page and page_size must be greater than or
