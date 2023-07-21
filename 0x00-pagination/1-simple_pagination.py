@@ -62,8 +62,8 @@ class Server:
         Returns:
             List[List]: The list of rows corresponding to the requested page.
         """
-        assert isinstance(page, int) and page > 0,
-        assert isinstance(page_size, int) and page_size > 0,
+        assert isinstance(page, int) and page > 0, "page must be an integer greater than 0."
+        assert isinstance(page_size, int) and page_size > 0, "page_size must be an integer greater than 0."
 
         dataset = self.dataset()
         total_items = len(dataset)
