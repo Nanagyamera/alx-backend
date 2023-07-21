@@ -40,17 +40,21 @@ class Server:
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
         """
-        Get pagination details for a specific start index (index) of the dataset.
+        Get pagination details for a specific start index (index)
+        of the dataset.
 
         Args:
-            index (int, optional): The start index of the dataset (0-indexed). Default is None.
-            page_size (int, optional): The number of items per page. Default is 10.
+            index (int, optional): The start index of the dataset (0-indexed).
+            Default is None.
+            page_size (int, optional): The number of items per page
+            Default is 10.
 
         Returns:
-            dict: A dictionary containing pagination details for the requested index.
+            dict: A dictionary containing pagination details for the
+            requested index.
         """
-        assert isinstance(index, int) and (index is None or index >= 0), "index must be None or a non-negative integer."
-        assert isinstance(page_size, int) and page_size > 0, "page_size must be an integer greater than 0."
+        assert isinstance(index, int) and (index is None or index >= 0),
+        assert isinstance(page_size, int) and page_size > 0,
 
         dataset = self.indexed_dataset()
         total_items = len(dataset)
