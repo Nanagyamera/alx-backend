@@ -70,6 +70,6 @@ class Server:
         start_idx, end_idx = index_range(page, page_size)
 
         if start_idx >= total_items:
-            return []
+            return [] # Return an empty list if the start index is out of range
 
         return dataset[start_idx:end_idx + 1]
