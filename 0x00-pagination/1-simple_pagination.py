@@ -62,14 +62,14 @@ class Server:
         Returns:
             List[List]: The list of rows corresponding to the requested page.
         """
-        assert isinstance(page, int) and page > 0, "page must be an integer greater than 0."
-        assert isinstance(page_size, int) and page_size > 0, "page_size must be an integer greater than 0."
+        assert isinstance(page, int) and page > 0
+        assert isinstance(page_size, int) and page_size > 0
 
         dataset = self.dataset()
         total_items = len(dataset)
         start_idx, end_idx = index_range(page, page_size)
 
         if start_idx >= total_items:
-            return [] # Return an empty list if the start index is out of range
+            return []
 
         return dataset[start_idx:end_idx + 1]
