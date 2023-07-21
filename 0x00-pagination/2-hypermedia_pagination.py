@@ -31,7 +31,8 @@ def index_range(page: int, page_size: int) -> tuple:
 
 
 class Server:
-    """Server class to paginate a database of popular baby names.
+    """
+    Server class to paginate a database of popular baby names.
     """
     DATA_FILE = "Popular_Baby_Names.csv"
 
@@ -39,7 +40,8 @@ class Server:
         self.__dataset = None
 
     def dataset(self) -> List[List]:
-        """Cached dataset
+        """
+        Cached dataset
         """
         if self.__dataset is None:
             with open(self.DATA_FILE) as f:
@@ -62,8 +64,8 @@ class Server:
         Returns:
             List[List]: The list of rows corresponding to the requested page.
         """
-        assert isinstance(page, int) and page > 0,
-        assert isinstance(page_size, int) and page_size > 0,
+        assert isinstance(page, int) and page > 0
+        assert isinstance(page_size, int) and page_size > 0
 
         dataset = self.dataset()
         total_items = len(dataset)
@@ -87,8 +89,8 @@ class Server:
             dict: A dictionary containing pagination details for the
             requested page.
         """
-        assert isinstance(page, int) and page > 0,
-        assert isinstance(page_size, int) and page_size > 0,
+        assert isinstance(page, int) and page > 0
+        assert isinstance(page_size, int) and page_size > 0
 
         dataset_page = self.get_page(page, page_size)
         total_items = len(self.dataset())
