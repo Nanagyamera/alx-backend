@@ -55,8 +55,10 @@ class Server:
         pagination parameters.
 
         Args:
-            page (int, optional): The page number (1-indexed). Default is 1.
-            page_size (int, optional): The number of items per page. Default is 10.
+            page (int, optional): The page number (1-indexed).
+            Default is 1.
+            page_size (int, optional): The number of items per page.
+            Default is 10.
 
         Returns:
             List[List]: The list of rows corresponding to the requested page.
