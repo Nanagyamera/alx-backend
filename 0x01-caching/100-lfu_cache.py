@@ -2,12 +2,13 @@
 """
 Task 5
 """
-
 from collections import defaultdict
+
 
 class LFUCache(BaseCaching):
     """
-    LFUCache inherits from BaseCaching and implements a caching system with LFU eviction policy
+    LFUCache inherits from BaseCaching and implements a
+    caching system with LFU eviction policy
     """
 
     def __init__(self):
@@ -33,7 +34,8 @@ class LFUCache(BaseCaching):
         """
         Evict the least frequency used item from the cache (LFU eviction)
         """
-        items_to_discard = [key for key, freq in self.frequency_counter.items() if freq == self.min_frequency]
+        items_to_discard = [key for key, freq in self.frequency_counter.items()
+                            if freq == self.min_frequency]
         key_to_evict = self.lru_evict(items_to_discard)
         del self.cache_data[key_to_evict]
         del self.frequency_counter[key_to_evict]
