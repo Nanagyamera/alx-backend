@@ -6,7 +6,8 @@ Task 2
 
 class LIFOCache(BaseCaching):
     """
-    LIFOCache inherits from BaseCaching and implements a caching system with LIFO eviction policy
+    LIFOCache inherits from BaseCaching and implements a caching
+    system with LIFO eviction policy
     """
 
     def __init__(self):
