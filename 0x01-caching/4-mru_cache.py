@@ -6,7 +6,8 @@ Task4
 
 class MRUCache(BaseCaching):
     """
-    MRUCache inherits from BaseCaching and implements a caching system with MRU eviction policy
+    MRUCache inherits from BaseCaching and implements a
+    caching system with MRU eviction policy
     """
 
     def __init__(self):
