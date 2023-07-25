@@ -6,7 +6,8 @@ Task3
 
 class LRUCache(BaseCaching):
     """
-    LRUCache inherits from BaseCaching and implements a caching system with LRU eviction policy
+    LRUCache inherits from BaseCaching and implements a
+    caching system with LRU eviction policy
     """
 
     def __init__(self):
