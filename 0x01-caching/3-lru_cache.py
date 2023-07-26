@@ -2,6 +2,7 @@
 """
 Task3
 """
+from base_caching import BaseCaching
 
 
 class LRUCache(BaseCaching):
