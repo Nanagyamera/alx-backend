@@ -3,6 +3,7 @@
 Task 5
 """
 from collections import defaultdict
+from base_caching import BaseCaching
 
 
 class LFUCache(BaseCaching):
