@@ -2,6 +2,7 @@
 """
 Task 2
 """
+from base_caching import BaseCaching
 
 
 class LIFOCache(BaseCaching):
