@@ -2,6 +2,7 @@
 """
 Task4
 """
+from base_caching import BaseCaching
 
 
 class MRUCache(BaseCaching):
