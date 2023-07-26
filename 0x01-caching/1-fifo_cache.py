@@ -2,6 +2,7 @@
 """
 Task 1
 """
+from base_caching import BaseCaching
 
 
 class FIFOCache(BaseCaching):
