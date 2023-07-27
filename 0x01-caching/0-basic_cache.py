@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Task 0
+Basic cache module
 """
 from base_caching import BaseCaching
 
