@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Task3
+LRU cahing module
 """
 from base_caching import BaseCaching
 
