@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Task 5
+Least Frequently Used caching module
 """
 from collections import defaultdict
 from base_caching import BaseCaching
